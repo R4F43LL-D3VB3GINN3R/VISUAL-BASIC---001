@@ -1,0 +1,23 @@
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim n As Integer
+        n = Val(txt_n1.Text)
+
+        If n > 0 Then
+            lbl_n1.Text = "Positive Number"
+        ElseIf n < 0 Then
+            lbl_n1.Text = "Negative Number"
+        Else
+            lbl_n1.Text = "Null"
+        End If
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        Me.Hide()
+        Form2.Show()
+
+    End Sub
+End Class
